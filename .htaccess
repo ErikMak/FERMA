@@ -1,0 +1,32 @@
+RewriteEngine On
+RewriteBase /     
+RewriteCond %{HTTP_HOST} ^(www\.)?example\.com$                                               
+RewriteRule ^main$ index.php?page=main [L]                                                            
+RewriteRule ^registration$ index.php?page=registration [L]                                             
+RewriteRule ^login$ index.php?page=login [L]
+RewriteRule ^shop$ index.php?page=shop [L]
+RewriteRule ^company$ index.php?page=company [L]
+RewriteRule ^seed_shop$ index.php?page=seed_shop [L]
+RewriteRule ^field$ index.php?page=field [L]
+RewriteRule ^storage$ index.php?page=storage [L]
+RewriteRule ^news$ index.php?page=news [L]
+RewriteRule ^support$ index.php?page=support [L]
+RewriteRule ^referal$ index.php?page=referal [L]
+RewriteRule ^home$ index.php?page=home [L]
+RewriteRule ^contracts$ index.php?page=contracts [L]
+RewriteRule ^profile$ index.php?page=profile [L]
+RewriteRule ^trade$ index.php?page=trade [L]
+RewriteRule ^faq$ index.php?page=faq [L]
+RewriteRule ^industry$ index.php?page=industry [L]
+RewriteRule ^bonus$ index.php?page=bonus [L]
+RewriteRule ^forest$ index.php?page=forest [L]
+RewriteRule ^donate$ index.php?page=donate [L]
+RewriteRule ^admin/home$ index.php?page=admin/home [L]
+RewriteRule ^admin/logs$ index.php?page=admin/logs [L]
+RewriteRule ^admin/users$ index.php?page=admin/users [L]
+RewriteRule ^admin/admin-list$ index.php?page=admin/admin-list [L]
+RewriteRule ^admin/ban-list$ index.php?page=admin/ban-list [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.php [L]

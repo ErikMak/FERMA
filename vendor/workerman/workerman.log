@@ -1,0 +1,208 @@
+2021-07-20 18:56:52 pid:1 Exception: Требуемый адрес для своего контекста неверен.
+ in F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php:2257
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\server.php(18): Workerman\Worker->listen()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2415): {closure}()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#5 F:\OpenServer\domains\Ptichki\server.php(35): Workerman\Worker::runAll()
+#6 {main}
+2021-07-20 18:56:53 pid:1 Worker process terminated
+2021-07-20 18:59:14 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:16
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(35): Workerman\Worker::runAll()
+#7 {main}
+2021-07-20 18:59:14 pid:1 Worker process terminated
+2021-07-20 19:25:42 pid:1 Error: Class 'Workerman\MySQL\Connection' not found in F:\OpenServer\domains\Ptichki\server.php:13
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2415): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#4 F:\OpenServer\domains\Ptichki\server.php(18): Workerman\Worker::runAll()
+#5 {main}
+2021-07-20 19:25:43 pid:1 Worker process terminated
+2021-07-20 19:26:32 pid:1 Error: Class 'Workerman\MySQL\Connection' not found in F:\OpenServer\domains\Ptichki\server.php:13
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2415): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#4 F:\OpenServer\domains\Ptichki\server.php(18): Workerman\Worker::runAll()
+#5 {main}
+2021-07-20 19:26:33 pid:1 Worker process terminated
+2021-07-20 19:37:23 pid:1 Error: Call to a member function select() on null in F:\OpenServer\domains\Ptichki\server.php:16
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2497): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Worker->acceptConnection()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(20): Workerman\Worker::runAll()
+#7 {main}
+2021-07-20 19:37:23 pid:1 Worker process terminated
+2021-07-20 19:38:57 pid:1 Exception: You can't send(object) to client, you need to convert it to a string.  in F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode()
+#1 F:\OpenServer\domains\Ptichki\server.php(19): Workerman\Connection\TcpConnection->send()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2497): {closure}()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Worker->acceptConnection()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#6 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#7 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#8 F:\OpenServer\domains\Ptichki\server.php(22): Workerman\Worker::runAll()
+#9 {main}
+2021-07-20 19:38:57 pid:1 Worker process terminated
+2021-07-20 19:42:37 pid:1 Error: Call to a member function fetch_assoc() on array in F:\OpenServer\domains\Ptichki\server.php:16
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2415): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#4 F:\OpenServer\domains\Ptichki\server.php(26): Workerman\Worker::runAll()
+#5 {main}
+2021-07-20 19:42:38 pid:1 Worker process terminated
+2021-07-20 21:44:02 pid:1 Error: Call to a member function query() on null in F:\OpenServer\domains\Ptichki\server.php:13
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2415): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#4 F:\OpenServer\domains\Ptichki\server.php(23): Workerman\Worker::runAll()
+#5 {main}
+2021-07-20 21:44:03 pid:1 Worker process terminated
+2021-07-20 23:27:08 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(53): Workerman\Worker::runAll()
+#7 {main}
+2021-07-20 23:27:08 pid:1 Worker process terminated
+2021-07-20 23:28:12 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:18
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(45): Workerman\Worker::runAll()
+#7 {main}
+2021-07-20 23:28:12 pid:1 Worker process terminated
+2021-07-20 23:32:36 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(52): Workerman\Worker::runAll()
+#7 {main}
+2021-07-20 23:32:36 pid:1 Worker process terminated
+2021-07-20 23:54:11 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(53): Workerman\Worker::runAll()
+#7 {main}
+2021-07-20 23:54:11 pid:1 Worker process terminated
+2021-07-21 00:05:27 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(53): Workerman\Worker::runAll()
+#7 {main}
+2021-07-21 00:05:27 pid:1 Worker process terminated
+2021-07-21 00:05:40 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(52): Workerman\Worker::runAll()
+#7 {main}
+2021-07-21 00:05:40 pid:1 Worker process terminated
+2021-07-21 00:11:44 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(53): Workerman\Worker::runAll()
+#7 {main}
+2021-07-21 00:11:44 pid:1 Worker process terminated
+2021-07-21 00:12:07 pid:1 Error: Call to a member function send() on null in F:\OpenServer\domains\Ptichki\server.php:23
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(660): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(49): Workerman\Worker::runAll()
+#7 {main}
+2021-07-21 00:12:07 pid:1 Worker process terminated
+2021-07-21 15:14:34 pid:1 Error: Object of class Workerman\Connection\TcpConnection could not be converted to string in F:\OpenServer\domains\Ptichki\server.php:39
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2497): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Worker->acceptConnection()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 F:\OpenServer\domains\Ptichki\server.php(50): Workerman\Worker::runAll()
+#7 {main}
+2021-07-21 15:14:34 pid:1 Worker process terminated
+2021-07-21 17:22:42 pid:1 Error: Object of class Workerman\Connection\TcpConnection could not be converted to string in F:\OpenServer\domains\Ptichki\server.php:25
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Protocols\Websocket.php(392): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Protocols\Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(600): Workerman\Protocols\Websocket::input()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#6 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#7 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#8 F:\OpenServer\domains\Ptichki\server.php(37): Workerman\Worker::runAll()
+#9 {main}
+2021-07-21 17:22:42 pid:1 Worker process terminated
+2021-07-21 17:23:15 pid:1 Error: Object of class Workerman\Connection\TcpConnection could not be converted to string in F:\OpenServer\domains\Ptichki\server.php:31
+Stack trace:
+#0 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(931): {closure}()
+#1 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(834): Workerman\Connection\TcpConnection->destroy()
+#2 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Protocols\Websocket.php(105): Workerman\Connection\TcpConnection->close()
+#3 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Connection\TcpConnection.php(600): Workerman\Protocols\Websocket::input()
+#4 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead()
+#5 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#6 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#7 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#8 F:\OpenServer\domains\Ptichki\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#9 F:\OpenServer\domains\Ptichki\server.php(36): Workerman\Worker::runAll()
+#10 {main}
+2021-07-21 17:23:15 pid:1 Worker process terminated

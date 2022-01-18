@@ -1,0 +1,1 @@
+*/1 * * * * php "W:\domains\Ptichki\request\cron_job.php"
